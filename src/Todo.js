@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Todo.css';
 import CreateTask from './components/CreateTask';
 import { Button } from 'antd';
@@ -28,7 +28,6 @@ const Task = ({task,index,completeTask,removeTask}) => {
     );
 };
 
-//TODO: File >> components : addTask + completeTask + removeTask + Task
 
 const Todo= () => {
     const[tasksRemaining,setTasksRemaining]= useState(0);
